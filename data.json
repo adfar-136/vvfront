@@ -1,0 +1,48 @@
+[
+    {
+      "moduleName": "HTML & CSS",
+      "topics": [
+        { "classNumber": 1, "topicName": "Introduction to Web Development", "youtubeLink": "https://www.youtube.com/live/VyqxYbS64gk?si=5N-l-8dok21b4_iV" },
+        { "classNumber": 2, "topicName": "Understanding Website Structure", "youtubeLink": "https://www.youtube.com/live/iVopStD7LXU?si=6-NmIJEaup-XiwAT" },
+        { "classNumber": 3, "topicName": "Foundations of Web Layout", "youtubeLink": "https://www.youtube.com/live/HjRHOIoxdYI?si=x-t2ModG70yG9Zpu" },
+        { "classNumber": 4, "topicName": "Core Elements of Web Structure", "youtubeLink": "https://www.youtube.com/live/HjRHOIoxdYI?si=b0tiG-TuCN50ibAU" },
+        { "classNumber": 5, "topicName": "Core CSS Concepts: Advanced 01", "youtubeLink": "https://www.youtube.com/live/KkJhMPgndhI?si=vKlbSYzMOqbJJvAF" },
+        { "classNumber": 6, "topicName": "Core CSS COncepts: Advanced 02", "youtubeLink": "https://www.youtube.com/live/KPujXWoWXYc?si=vHK43OEiZaP4SoC3" },
+        { "classNumber": 7, "topicName": "HTML & CSS Project", "youtubeLink": "https://www.youtube.com/live/7IfEhYEu5ho?si=-Z9CGXVZuLNpcaVo" },
+        { "classNumber": 8, "topicName": "HTML & CSS Project", "youtubeLink": "https://www.youtube.com/live/HjRHOIoxdYI?si=x-t2ModG70yG9Zpu" },
+        { "classNumber": 9, "topicName": "Core CSS Concepts: Advanced 03", "youtubeLink": "https://www.youtube.com/live/HjRHOIoxdYI?si=x-t2ModG70yG9Zpu" },
+        { "classNumber": 10, "topicName": "Core HTML + CSS Concepts : Advance 04", "youtubeLink": "https://www.youtube.com/live/HjRHOIoxdYI?si=x-t2ModG70yG9Zpu" },
+        { "classNumber": 11, "topicName": "Core HTML + CSS Concepts : Advance 05", "youtubeLink": "https://www.youtube.com/live/Jmyx9GUh1fs?si=dCu6tamE6oTmMEtS" },
+        { "classNumber": 12, "topicName": "Core CSS Concepts : Advance 06", "youtubeLink": "https://www.youtube.com/live/Zxm9oGWU2XY?si=hFbHCuQM_Ky_tZH-" }
+      ]
+    },
+    {
+      "moduleName": "JavaScript Fundamentals",
+      "topics": [
+        { "classNumber": 13, "topicName": "Kickoff to JavaScript Mastery", "youtubeLink": "https://www.youtube.com/live/rmPG_Mv7J30?si=S3yAlyYp1crj54jT" },
+        { "classNumber": 14, "topicName": "Core Programming Constructs in JavaScript", "youtubeLink": "https://www.youtube.com/live/1_lQPkeWTlA?si=qbzXXC3GYmZekUve" },
+        { "classNumber": 15, "topicName": "JavaScript Under the Hood-Part 1", "youtubeLink": "https://www.youtube.com/live/yM4eFBrb7sY?si=QyNTRZCnM81jr7k2" },
+        { "classNumber": 16, "topicName": "JavaScript Under the Hood-Part 2", "youtubeLink": "https://www.youtube.com/live/-LX3ckOnnz0?si=5Hnx1vW35A1e35gB" },
+        { "classNumber": 17, "topicName": "JavaScript Under the Hood-Part 3", "youtubeLink": "https://www.youtube.com/live/F6d7OAFQ3nw?si=6QTQLvBQjYv1GuCK" },
+        { "classNumber": 18, "topicName": "Inside JavaScript Arrays & Methods", "youtubeLink": "https://www.youtube.com/live/rmPG_Mv7J30?si=S3yAlyYp1crj54jT" },
+        { "classNumber": 19, "topicName": "Delving into JavaScript Objects", "youtubeLink": "https://www.youtube.com/live/N6NGSyOzHno?si=KFaUmNuEFFJ_HBMp" },
+        { "classNumber": 20, "topicName": "Mastering the DOM Magic", "youtubeLink": "https://www.youtube.com/live/PXUGRcwbyOM?si=m15HPXqeDhr5PNiA" },
+        { "classNumber": 21, "topicName": "Mastering the DOM Manipulation - Part 1", "youtubeLink": "https://www.youtube.com/live/u4QTWuIdQM4?si=DaLug6lczPt5vYmQ" },
+        { "classNumber": 22, "topicName": "DOM Event Mastery and Event Listeners", "youtubeLink": "https://www.youtube.com/live/5scYKEqaqek?si=X95U3BxxhzdyNO6i" },
+        { "classNumber": 23, "topicName": "Asynchronous JavaScript Under the Hood", "youtubeLink": "https://www.youtube.com/live/M2y3Ni9LOiw?si=jDPbSHORugyTPJwi" },
+        { "classNumber": 24, "topicName": "Prototypes & the Power of 'new' keyword", "youtubeLink": "https://www.youtube.com/live/Sss0710GP6Y?si=0thasDovnpb_cHOb" },
+        { "classNumber": 25, "topicName": "Promises, Async & Await", "youtubeLink": "https://www.youtube.com/live/BYYgNxy91yE?si=l8giqzCAN1F-5ODb" },
+        { "classNumber": 26, "topicName": "JavaScript Project Workshop: Building Dynamic Features with API Integration", "youtubeLink": "https://www.youtube.com/live/sj4P9SiBHaI?si=evxmdB0bTXe_wzLA" },
+        { "classNumber": 27, "topicName": "Advanced JavaScript Techniques: Debounce, Throttle, Call, Apply, Bind, Currying & Local Storage", "youtubeLink": "https://www.youtube.com/live/TbPuz1xZbIw?si=WpoNOTddC-CfUwD3" }
+      ]
+    },
+    {
+      "moduleName": "React Basics",
+      "topics": [
+        { "classNumber": 28, "topicName": "Introduction to React - Understanding React Properties & Folder Structure", "youtubeLink": "https://www.youtube.com/live/ISlcQzZDGBo?si=oz4WB8xXSAFx4nbi" },
+        { "classNumber": 29, "topicName": "Diving into React Essentials: Learning JSX, Props, and Lists", "youtubeLink": "https://www.youtube.com/live/whzJ86CYl4Q?si=l3iRNRHqF9_SLTIS" },
+        { "classNumber": 12, "topicName": "React State: Scheduling & Batching", "youtubeLink": "https://www.youtube.com/live/nC_fY4ca95k?si=VLw0lkbI18bTqj0f" }
+      ]
+    }
+  ]
+  
