@@ -9,7 +9,7 @@ const Youtube = () => {
   useEffect(() => {
     const fetchModules = async () => {
       try {
-        const response = await fetch("http://localhost:3000/mern/modules"); // Replace with your API URL
+        const response = await fetch("https://vvbackend.onrender.com/mern/modules"); // Replace with your API URL
         
         if (!response.ok) {
           throw new Error(`HTTP error! status: ${response.status}`);

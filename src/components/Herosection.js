@@ -164,7 +164,7 @@ Don’t worry, there’s no catch—we’ll never charge you for learning.
                     >
                       Get started
                     </a>
-                    <a href="#" className="text-sm/6 font-semibold text-gray-900">
+                    <a href="https://chat.whatsapp.com/JKvZdK6fxjW4bvrnu87mkE" target='_blank' className="text-sm/6 font-semibold text-gray-900">
                       Join our batch <span aria-hidden="true">→</span>
                     </a>
                   </div>
@@ -174,7 +174,7 @@ Don’t worry, there’s no catch—we’ll never charge you for learning.
                     <div className="relative">
                       <img
                         alt=""
-                        src="https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&h=528&q=80"
+                        src="/mern.webp"
                         className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
                       />
                       <div className="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10" />
@@ -184,7 +184,7 @@ Don’t worry, there’s no catch—we’ll never charge you for learning.
                     <div className="relative">
                       <img
                         alt=""
-                        src="https://images.unsplash.com/photo-1485217988980-11786ced9454?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&h=528&q=80"
+                        src="/teach.webp"
                         className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
                       />
                       <div className="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10" />

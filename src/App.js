@@ -15,8 +15,16 @@ import Discussions from './components/Discussions';
 import AuthRedirect from './Route/AuthRedirectRoute';
 import ProtectedRoute from './Route/ProtectedRoute';
 import Profile from './components/Profile';
+import Student from './components/Student';
+import { useAuth } from './Context/AuthProvider';
+import AdminSessionManager from './components/AdminSessionManager';
+import ForgotPassword from './components/ForgotPassword';
+import ResetPassword from './components/Reset-Password';
+import Contact from './components/Contact';
+import PrivateRoute from './Route/PrivateRoute';
 
 function App() {
+  const {isAuthenticated} = useAuth()
   return (
     <div>
       <BrowserRouter>
@@ -56,13 +64,13 @@ function App() {
 
           {/* Protected Routes */}
           <Route
-            path="/mern"
-            element={
-              <ProtectedRoute>
-                <Mern />
-              </ProtectedRoute>
-            }
-          />
+          path="/mern"
+          element={
+            <PrivateRoute isAuthenticated={isAuthenticated}>
+              <Mern/>
+            </PrivateRoute>
+          }
+        />
           <Route
             path="/content"
             element={
@@ -71,6 +79,7 @@ function App() {
               
             }
           />
+          <Route path='/contact' element={<Contact/>}/>          
           <Route
             path="/discussion"
             element={
@@ -80,7 +89,17 @@ function App() {
             }
             
           />
-          <Route path='/profile' element={<Profile/>}/>
+          <Route path='/profile' element={
+            
+              <Profile/>
+          
+          }/>
+          <Route path='/student' element={
+            
+            <Student/>}/>
+            <Route path='/classcreation' element={<AdminSessionManager/>}/>
+            <Route path='/forgot-password' element={<ForgotPassword/>}/>
+            <Route path="/reset-password" element={<ResetPassword />} />
         </Routes>
       </BrowserRouter>
     </div>

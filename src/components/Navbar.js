@@ -4,7 +4,7 @@ import { Link, useLocation } from 'react-router-dom';
 import { useAuth } from '../Context/AuthProvider';
 
 export default function Navbar() {
-  const { isAuthenticated,fetchUserDetails, userDetails, logout } = useAuth() // Access auth state and actions
+  const { isAuthenticated, userDetails, logout } = useAuth() // Access auth state and actions
   const location = useLocation(); // Get current path for active link styling
 
   const navLinks = [
@@ -12,8 +12,8 @@ export default function Navbar() {
     { name: 'MERN', href: '/mern' },
     { name: 'About Us', href: '/about' },
     { name: 'Contact', href: '/contact' },
-    { name: 'Content', href: '/content' },
-    { name: 'Discussion', href: '/discussion' },
+    { name: 'student', href: '/student' },
+
   ];
  
 
@@ -63,11 +63,10 @@ export default function Navbar() {
                   </Menu.Button>
                 ) : (
                   <div className="space-x-4">
-                    <Link
+                   <Link
                       to="/signin"
-                      className="text-sm font-medium text-gray-500 hover:text-gray-700 hover:underline"
-                    >
-                      Sign In
+                      className="text-sm font-medium text-white bg-green-600 px-5 py-2 rounded-lg hover:bg-indigo-700 hover:text-white hover:underline focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
+                        Sign In
                     </Link>
                     
                     

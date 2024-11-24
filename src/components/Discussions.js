@@ -15,7 +15,7 @@ const Discussions = () => {
   const fetchDiscussions = async (page = 1) => {
     setLoading(true);
     try {
-      const response = await fetch(`http://localhost:3000/discussions?page=${page}&limit=5`, {
+      const response = await fetch(`https://vvbackend.onrender.com/discussions?page=${page}&limit=5`, {
         credentials: "include", // Ensure cookies are sent with the request
       });
       if (!response.ok) throw new Error("Failed to fetch discussions");
@@ -31,7 +31,7 @@ const Discussions = () => {
 
   const handleNewDiscussion = async () => {
     try {
-      const response = await fetch("http://localhost:3000/discussions", {
+      const response = await fetch("https://vvbackend.onrender.com/discussions", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         credentials: "include",
@@ -51,7 +51,7 @@ const Discussions = () => {
 
   const handleLike = async (id) => {
     try {
-      const response = await fetch(`http://localhost:3000/discussions/${id}/like`, {
+      const response = await fetch(`https://vvbackend.onrender.com/discussions/${id}/like`, {
         method: "PATCH",
         credentials: "include",
       });
@@ -85,7 +85,7 @@ const Discussions = () => {
     if (!content) return;
 
     try {
-      const response = await fetch(`http://localhost:3000/discussions/${discussionId}/comment`, {
+      const response = await fetch(`https://vvbackend.onrender.com/discussions/${discussionId}/comment`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         credentials: "include",
@@ -116,7 +116,7 @@ const Discussions = () => {
     console.log(discussionId,  commentId)
     if (window.confirm("Are you sure you want to delete this comment?")) {
       try {
-        const response = await fetch(`http://localhost:3000/discussions/${discussionId}/comment/${commentId}`, {
+        const response = await fetch(`https://vvbackend.onrender.com/discussions/${discussionId}/comment/${commentId}`, {
           method: "DELETE",
           credentials: "include",
         });
@@ -147,7 +147,7 @@ const Discussions = () => {
     if (newContent === null || newContent === "") return; // No edit or cancel
 
     try {
-      const response = await fetch(`http://localhost:3000/discussions/${discussionId}/comment/${commentId}`, {
+      const response = await fetch(`https://vvbackend.onrender.com/discussions/${discussionId}/comment/${commentId}`, {
         method: "PATCH",
         headers: { "Content-Type": "application/json" },
         credentials: "include",
@@ -196,14 +196,14 @@ const Discussions = () => {
 
   return (
     <div className="max-w-5xl mx-auto p-4">
+
     {/* Top Responsive Section */}
-    <div className="bg-gray-800 text-white p-8 rounded-lg shadow-lg mb-6">
+<div className="bg-gradient-to-r from-indigo-600 to-indigo-900  text-white p-8 rounded-lg shadow-lg mb-6">
   <h1 className="text-4xl md:text-5xl font-extrabold text-center mb-6">
-    Your Learning, Your Space
+    Welcome to Your Dashboard
   </h1>
-  <p className="text-lg md:text-xl text-center mb-8 max-w-3xl mx-auto">
-    This forum is a place to help and inspire each other. Ask questions from live classes, share tips on projects, or simply connect with peers. 
-    Together, we learn, grow, and succeed!
+  <p className="text-lg md:text-xl text-center mb-6 max-w-3xl mx-auto">
+    Connect, share, and collaborate with peers. Ask questions, share insights, and grow together!
   </p>
 
   <div className="grid md:grid-cols-3 gap-6 text-center">
@@ -211,7 +211,7 @@ const Discussions = () => {
     <div className="p-6 border-2 border-white rounded-xl shadow-xl bg-opacity-30 bg-white hover:bg-opacity-40 transition">
       <h2 className="text-2xl font-bold mb-2">📘 Learn Together</h2>
       <p className="text-sm md:text-base">
-        Facing challenges in your learning journey? Post your questions here and let your peers guide you. Every question matters!
+        Post your questions and get guidance from peers. Your curiosity fuels growth!
       </p>
     </div>
 
@@ -219,7 +219,7 @@ const Discussions = () => {
     <div className="p-6 border-2 border-white rounded-xl shadow-xl bg-opacity-30 bg-white hover:bg-opacity-40 transition">
       <h2 className="text-2xl font-bold mb-2">💬 Share Your Voice</h2>
       <p className="text-sm md:text-base">
-        Share your thoughts, experiences, or insights about what you’ve learned. Your story could inspire someone to keep going!
+        Express your thoughts and insights to inspire and engage others.
       </p>
     </div>
 
@@ -227,34 +227,23 @@ const Discussions = () => {
     <div className="p-6 border-2 border-white rounded-xl shadow-xl bg-opacity-30 bg-white hover:bg-opacity-40 transition">
       <h2 className="text-2xl font-bold mb-2">🤝 Collaborate to Succeed</h2>
       <p className="text-sm md:text-base">
-        Join hands with like-minded peers, form study groups, and tackle challenges as a team.
+        Form study groups and overcome challenges as a team.
       </p>
     </div>
   </div>
 
-  <div className="mt-8">
-    <h3 className="text-xl md:text-2xl font-semibold text-center mb-4">💡 Quick Tips for Using the Forum:</h3>
-    <ul className="list-disc list-inside max-w-3xl mx-auto text-sm md:text-base">
-      <li>Be respectful and constructive while interacting with peers.</li>
-      <li>Provide detailed context when asking questions for better answers.</li>
-      <li>Engage with others' posts by sharing insights or experiences.</li>
-      <li>Celebrate milestones and accomplishments together!</li>
-    </ul>
-  </div>
-
   <p className="text-center mt-6 text-lg md:text-xl font-medium">
-    Start your journey by sharing your first thought or query. We’re here to help each other thrive!
+    Share your first thought or query to get started. Let’s grow together!
   </p>
 </div>
-
 
     {/* Create Discussion */}
     <div className="mb-6">
       <textarea
         value={newDiscussion}
         onChange={(e) => setNewDiscussion(e.target.value)}
-        placeholder="Share your thoughts..."
-        className="w-full p-4 border rounded-lg shadow-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+        placeholder="Start a Discussion or Ask a Doubt!"
+        className="w-full p-8 border rounded-lg shadow-md focus:outline-none focus:ring-2 focus:ring-blue-500"
       ></textarea>
       <button
         onClick={handleNewDiscussion}

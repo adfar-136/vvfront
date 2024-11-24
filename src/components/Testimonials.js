@@ -1,11 +1,10 @@
 const featuredTestimonial = {
-    body: 'VariableVerse has been a game-changer for me. I never thought I could learn tech without paying huge fees. The community and mentors here are amazing, and they genuinely care about your progress. If you’re willing to put in the work, they’ll help you succeed.',
+    body: 'Since college time i wanted to be a developer but did not know what to do and how to do so learnt several languages but nothing worked. But after joining this course i have a clear vision after orientation and also i am getting strong foundation as well, which i never get on youtube or google. Thanks to sir who is doing all this free of cost but sadly students are not understanding what they are missing by not being serious for this.',
     author: {
-      name: 'Amit Bansal',
-      handle: 'amitbansal',
-      imageUrl:
-        'https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=1024&h=1024&q=80',
-      logoUrl: 'https://tailwindui.com/plus/img/logos/savvycal-logo-gray-900.svg', // Use your logo here if applicable
+      name: 'Anurag Rajput ',
+      handle: 'Anurag Rajput',
+      imageUrl:'testimonials/AnuragRajput.jpg',
+      // logoUrl: '/Users/adfarrashid/Downloads/Tahir Khan.JPG', // Use your logo here if applicable
     },
   }
   
@@ -13,53 +12,45 @@ const featuredTestimonial = {
     [
       [
         {
-          body: 'The guidance and mentorship at VariableVerse have been invaluable. I never thought I could grasp complex concepts, but with the dedication of the team, I was able to succeed.',
+          body: 'I recently watch session with Variableverse, and it was a transformative experience. The course was well-structured and engaging, providing me with practical skills and insights that I could immediately apply. Variableverses innovative approach to learning helped me deepen my understanding of mainly JavaScript and React. Thanks to this course, I feel more confident and equipped to tackle challenges in [related field or personal project]. I highly recommend Variableverse to anyone looking to enhance their skills and knowledge',
           author: {
-            name: 'Aarti Sharma',
-            handle: 'aartisharma',
+            name: 'Ansita Ramola ',
+            handle: 'rAnsita5350',
             imageUrl:
-              'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+              'testimonials/ansitaramola.jpg',
           },
         },
         {
-            body: 'I struggled to find affordable tech education, but VariableVerse made it possible. They focus on providing real value without charging a penny. It’s amazing!',
+            body: 'This course is just fantastic. If you want to learn the web development(html, css, javascript and MERN) then you should definitely join this course. Also pedagogy of Adfar sir is best as he elaborate in depth for each concept he teaches. Definitely just go for it!',
             author: {
-              name: 'Sara Singh',
-              handle: 'sarasignh',
+              name: 'Tahir Khan',
+              handle: 'tahirkhan7',
               imageUrl:
-                'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+                'testimonials/TahirKhan.JPG',
             },
           },
           {
-            body: 'I struggled to find affordable tech education, but VariableVerse made it possible. They focus on providing real value without charging a penny. It’s amazing!',
+            body: 'Adfar sir explanation is very much engaging and he is able to explain complex concepts in a very easy manner so that beginners like me can grasp them easily. ',
             author: {
-              name: 'Sara Singh',
-              handle: 'sarasignh',
+              name: 'Sadi Hossain ',
+              handle: 'SadiHossain',
               imageUrl:
-                'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+                'testimonials/sadi.jpg',
             },
           },
         // More testimonials...
       ],
       [
         {
-          body: 'VariableVerse gave me the exposure I needed to build my skills. The community support and focus on learning at my own pace made all the difference.',
+          body: 'I have had a fantastic experience in the MERN Stack course! Variableverse has been instrumental in helping me grasp complex concepts with clarity and confidence. The explanations are concise, and the examples are relatable. I have seen significant improvement in my understanding and skills in HTML, CSS,JAVA SCRIPT ,React, and Node.js, building upon my existing foundation. Thank you, Variableverse, for providing such valuable learning resources.',
           author: {
-            name: 'Raj Kumar',
-            handle: 'rajkumar',
+            name: 'Ankit Kumar Sharma ',
+            handle: '_ankit_kr',
             imageUrl:
-              'https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+              'testimonials/AnkitKr.jpeg',
           },
         },
-        {
-            body: 'I struggled to find affordable tech education, but VariableVerse made it possible. They focus on providing real value without charging a penny. It’s amazing!',
-            author: {
-              name: 'Sara Singh',
-              handle: 'sarasignh',
-              imageUrl:
-                'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
-            },
-          },
+       
           
         // More testimonials...
       ],
@@ -67,23 +58,15 @@ const featuredTestimonial = {
     [
       [
         {
-          body: 'I struggled to find affordable tech education, but VariableVerse made it possible. They focus on providing real value without charging a penny. It’s amazing!',
+          body: 'My experience with VariableVerse has been fantastic so far. The course is well-structured, making it easy to follow and understand the MERN stack. I have completed HTML, CSS, JavaScript, and React, and the hands-on projects have really helped me solidify my skills. The guidance and resources provided have been invaluable in building a strong foundation. I’m excited to continue learning and confident that VariableVerse will help me achieve my goals.',
           author: {
-            name: 'Sara Singh',
-            handle: 'sarasignh',
+            name: 'SHAIK MOHAMMAD ASHWAK',
+            handle: 'mohammad-ashwak-shaik',
             imageUrl:
-              'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+              'testimonials/SHAIK.jpeg',
           },
         },
-        {
-            body: 'I struggled to find affordable tech education, but VariableVerse made it possible. They focus on providing real value without charging a penny. It’s amazing!',
-            author: {
-              name: 'Sara Singh',
-              handle: 'sarasignh',
-              imageUrl:
-                'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
-            },
-          },
+        
         // More testimonials...
       ],
       [

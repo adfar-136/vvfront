@@ -10,15 +10,17 @@ export const AuthProvider = ({ children }) => {
 
   // Function to fetch user details
   const fetchUserDetails = async () => {
+    console.log("adfar")
     try {
-      const response = await fetch('http://localhost:3000/auth', {
+      const response = await fetch('https://vvbackend.onrender.com/auth/', {
         method: 'GET',
         credentials: 'include', // Ensures cookies are sent
       });
   
       if (response.ok) {
         const data = await response.json();
-        if (data.status === true && data.user) {
+        console.log("datadfasf", data)
+        if (data.status === true && data) {
           setIsAuthenticated(true);
           setUserDetails(data.user);
         } else {
@@ -42,8 +44,7 @@ console.log(isAuthenticated)
 
 const logout = async () => {
   try {
-    console.log("dsd")
-    const response = await fetch('http://localhost:3000/auth/logout', {
+    const response = await fetch('https://vvbackend.onrender.com/auth/logout', {
       method: 'POST',
       credentials: 'include', // Ensures the token cookie is cleared
     });
