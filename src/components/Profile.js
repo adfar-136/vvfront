@@ -102,7 +102,7 @@ const Profile = () => {
           <p className="text-xl font-semibold text-gray-800 mb-4">Please sign in to view your profile.</p>
           <button
             onClick={() => window.location.href = '/signin'} // replace with your actual sign-in route
-            className="inline-flex items-center justify-center rounded-md border border-transparent bg-indigo-600 px-6 py-2 text-sm font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
+            className="inline-flex items-center justify-center rounded-md border border-transparent bg-green-600 px-6 py-2 text-sm font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
             Sign In
           </button>
         </div>
@@ -194,14 +194,14 @@ const Profile = () => {
               <button
                 type="button"
                 onClick={() => setEditable(!editable)}
-                className="inline-flex justify-center rounded-md border border-transparent bg-indigo-600 py-2 px-4 text-sm font-medium text-white hover:bg-indigo-700"
+                className="inline-flex justify-center rounded-md border border-transparent bg-green-600 py-2 px-4 text-sm font-medium text-white hover:bg-indigo-700"
               >
                 {editable ? 'Cancel' : 'Edit'}
               </button>
               <button
                 type="submit"
                 disabled={!editable}
-                className={`ml-3 inline-flex justify-center rounded-md border border-transparent bg-indigo-600 py-2 px-4 text-sm font-medium text-white hover:bg-indigo-700 ${
+                className={`ml-3 inline-flex justify-center rounded-md border border-transparent bg-green-600 py-2 px-4 text-sm font-medium text-white hover:bg-indigo-700 ${
                   !editable ? 'cursor-not-allowed opacity-50' : ''
                 }`}
               >

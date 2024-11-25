@@ -98,7 +98,7 @@ const MernContent = () => {
   return (
     <div className="flex">
       {/* Left Navigation Sidebar */}
-      <nav className="w-64 bg-gray-800 text-white min-h-screen p-4">
+      <nav className="w-64 bg-gray-800 text-white min-h-screen p-4 hidden md:block">
         <h2 className="text-2xl font-bold mb-6">Technologies</h2>
         <ul>
           {tags.map((tag, index) => (
@@ -119,7 +119,7 @@ const MernContent = () => {
         {/* Header */}
         <header className="mb-6 sticky top-0 bg-white z-10 shadow p-4">
           <h1 className="text-4xl font-bold text-gray-900">Documentation</h1>
-          <div className="flex flex-wrap mt-4 gap-4">
+          <div className="flex flex-wrap mt-4 gap-4 sm:hidden md:flex">
             <input
               type="text"
               value={searchTerm}
@@ -176,9 +176,11 @@ const MernContent = () => {
                 <div key={contentIndex} className="mb-6">
                   <p className="text-gray-800 leading-7 mb-4">{content}</p>
                   {doc.codeSnippets?.[contentIndex] && (
-                    <pre className="bg-gray-900 text-white p-4 rounded-lg overflow-x-auto">
-                      <code>{doc.codeSnippets[contentIndex].code}</code>
-                    </pre>
+                    <div className="overflow-x-auto max-w-full">
+                      <pre className="bg-gray-900 text-white p-4 rounded-lg overflow-x-auto">
+                        <code>{doc.codeSnippets[contentIndex].code}</code>
+                      </pre>
+                    </div>
                   )}
                 </div>
               ))}
@@ -223,10 +225,10 @@ const MernContent = () => {
                 <button
                   key={i}
                   onClick={() => setCurrentPage(i + 1)}
-                  className={`px-4 py-2 mx-1 border rounded-lg ${
+                  className={`mx-2 py-1 px-4 rounded-lg ${
                     currentPage === i + 1
                       ? "bg-blue-500 text-white"
-                      : "bg-white text-gray-600"
+                      : "bg-gray-300 text-gray-700"
                   }`}
                 >
                   {i + 1}

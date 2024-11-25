@@ -25,7 +25,7 @@ export default function Login() {
       if (data.status) {
         console.log(data)
         fetchUserDetails();
-        navigate("/content");
+        navigate("/student");
       } else {
         setError(data.message || "Login failed");
       }
@@ -126,7 +126,7 @@ export default function Login() {
             <div>
               <button
                 type="submit"
-                className="w-full py-2 px-4 bg-indigo-600 text-white text-lg font-semibold rounded-lg hover:bg-indigo-700 focus:outline-none"
+                className="w-full py-2 px-4 bg-green-600 text-white text-lg font-semibold rounded-lg hover:bg-indigo-700 focus:outline-none"
               >
                 Sign in
               </button>

@@ -166,7 +166,7 @@ const Roadmap = () => {
               }`}
             >
               {/* Icon/Node */}
-              <div className="flex-shrink-0 w-20 h-20 flex items-center justify-center bg-indigo-600 text-white text-2xl font-bold rounded-full shadow-lg">
+              <div className="flex-shrink-0 w-20 h-20 flex items-center justify-center bg-green-600 text-white text-2xl font-bold rounded-full shadow-lg">
                 {index + 1}
               </div>
 

@@ -64,7 +64,7 @@ const AttendanceDashboard = () => {
       <div className="bg-white shadow-lg rounded-lg overflow-hidden">
         
         {/* Table Header */}
-        <div className="px-6 py-4 bg-indigo-600 text-white text-lg font-semibold">
+        <div className="px-6 py-4 bg-green-600 text-white text-lg font-semibold">
           <span>Class Attendance</span>
         </div>
 

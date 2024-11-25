@@ -101,7 +101,7 @@ export default function ForgotPassword() {
               <div>
                 <button
                   type="submit"
-                  className="w-full bg-indigo-600 text-white py-2 rounded-md hover:bg-indigo-500 transition duration-200"
+                  className="w-full bg-green-600 text-white py-2 rounded-md hover:bg-indigo-500 transition duration-200"
                 >
                   Send OTP
                 </button>
@@ -173,7 +173,7 @@ export default function ForgotPassword() {
               <div>
                 <button
                   type="submit"
-                  className="w-full bg-indigo-600 text-white py-2 rounded-md hover:bg-indigo-500 transition duration-200"
+                  className="w-full bg-green-600 text-white py-2 rounded-md hover:bg-indigo-500 transition duration-200"
                 >
                   Reset Password
                 </button>

@@ -159,7 +159,7 @@ export default function Register() {
               </div>
               <button
                 type="submit"
-                className="w-full mt-6 py-2 bg-indigo-600 text-white font-semibold rounded-lg hover:bg-indigo-500 focus:outline-none focus:ring-2 focus:ring-indigo-600"
+                className="w-full mt-6 py-2 bg-green-600 text-white font-semibold rounded-lg hover:bg-indigo-500 focus:outline-none focus:ring-2 focus:ring-indigo-600"
               >
                 Sign Up
               </button>
@@ -184,7 +184,7 @@ export default function Register() {
               </div>
               <button
                 type="submit"
-                className="w-full mt-6 py-2 bg-indigo-600 text-white font-semibold rounded-lg hover:bg-indigo-500 focus:outline-none focus:ring-2 focus:ring-indigo-600"
+                className="w-full mt-6 py-2 bg-green-600 text-white font-semibold rounded-lg hover:bg-indigo-500 focus:outline-none focus:ring-2 focus:ring-indigo-600"
               >
                 Verify OTP
               </button>
@@ -192,7 +192,7 @@ export default function Register() {
                 type="button"
                 onClick={handleResendOtp}
                 disabled={resendCountdown > 0}
-                className={`w-full mt-4 py-2 text-white font-semibold rounded-lg ${resendCountdown > 0 ? "bg-gray-400" : "bg-indigo-600"} hover:bg-indigo-500 focus:outline-none focus:ring-2 focus:ring-indigo-600`}
+                className={`w-full mt-4 py-2 text-white font-semibold rounded-lg ${resendCountdown > 0 ? "bg-gray-400" : "bg-green-600"} hover:bg-indigo-500 focus:outline-none focus:ring-2 focus:ring-indigo-600`}
               >
                 Resend OTP ({resendCountdown}s)
               </button>
