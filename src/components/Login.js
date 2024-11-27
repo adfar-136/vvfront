@@ -6,12 +6,14 @@ export default function Login() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState(null);
+  const [loading, setLoading] = useState(false); // Add loading state
   const navigate = useNavigate();
   const { fetchUserDetails } = useAuth();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     setError(null); // Clear previous errors
+    setLoading(true); // Set loading to true when the request starts
 
     try {
       const response = await fetch("https://vvbackend.onrender.com/auth/signin", {
@@ -23,7 +25,7 @@ export default function Login() {
 
       const data = await response.json();
       if (data.status) {
-        console.log(data)
+ 
         fetchUserDetails();
         navigate("/student");
       } else {
@@ -31,6 +33,8 @@ export default function Login() {
       }
     } catch (err) {
       setError("An error occurred while logging in. Please try again.");
+    } finally {
+      setLoading(false); // Reset loading state when the request is complete
     }
   };
 
@@ -126,9 +130,10 @@ export default function Login() {
             <div>
               <button
                 type="submit"
+                disabled={loading} // Disable button when loading
                 className="w-full py-2 px-4 bg-green-600 text-white text-lg font-semibold rounded-lg hover:bg-indigo-700 focus:outline-none"
               >
-                Sign in
+                {loading ? "Signing in..." : "Sign in"} {/* Change button text when loading */}
               </button>
             </div>
           </form>

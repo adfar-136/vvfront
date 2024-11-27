@@ -10,7 +10,7 @@ export const AuthProvider = ({ children }) => {
 
   // Function to fetch user details
   const fetchUserDetails = async () => {
-    console.log("adfar")
+
     try {
       const response = await fetch('https://vvbackend.onrender.com/auth/', {
         method: 'GET',
@@ -19,7 +19,7 @@ export const AuthProvider = ({ children }) => {
   
       if (response.ok) {
         const data = await response.json();
-        console.log("datadfasf", data)
+
         if (data.status === true && data) {
           setIsAuthenticated(true);
           setUserDetails(data.user);
@@ -38,7 +38,7 @@ export const AuthProvider = ({ children }) => {
     }
   };
   
-console.log(isAuthenticated)
+
 
 
 

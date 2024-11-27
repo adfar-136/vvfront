@@ -22,7 +22,7 @@ export default function ForgotPassword() {
       });
 
       const data = await response.json();
-      console.log(data);
+  
       if (data) {
         setMessage("OTP sent to your email. Please check your inbox.");
         setIsOtpSent(true); // Mark OTP as sent
@@ -125,7 +125,7 @@ export default function ForgotPassword() {
                     type="email"
                     value={email}
                     readOnly
-                    className="block w-full p-4 rounded-md border-gray-300 shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+                    className="block w-full p-4 text-gray-900 rounded-md border-gray-300 shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
                   />
                 </div>
               </div>
@@ -145,7 +145,7 @@ export default function ForgotPassword() {
                     required
                     value={otp}
                     onChange={(e) => setOtp(e.target.value)}
-                    className="block w-full rounded-md p-4 border-gray-300 shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+                    className="block w-full rounded-md p-4 text-gray-900 border-gray-300 shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
                   />
                 </div>
               </div>
@@ -165,7 +165,7 @@ export default function ForgotPassword() {
                     required
                     value={newPassword}
                     onChange={(e) => setNewPassword(e.target.value)}
-                    className="block w-full rounded-md p-4 border-gray-300 shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+                    className="block w-full rounded-md p-4 text-gray-900 border-gray-300 shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
                   />
                 </div>
               </div>

@@ -19,9 +19,9 @@ import Student from './components/Student';
 import { useAuth } from './Context/AuthProvider';
 import AdminSessionManager from './components/AdminSessionManager';
 import ForgotPassword from './components/ForgotPassword';
-import ResetPassword from './components/Reset-Password';
 import Contact from './components/Contact';
 import PrivateRoute from './Route/PrivateRoute';
+import Adfar from './components/Adfar/Adfar';
 
 function App() {
   const {isAuthenticated} = useAuth()
@@ -99,7 +99,7 @@ function App() {
             <Student/>}/>
             <Route path='/classcreation' element={<AdminSessionManager/>}/>
             <Route path='/forgot-password' element={<ForgotPassword/>}/>
-            <Route path="/reset-password" element={<ResetPassword />} />
+            <Route path= '/who-am-i' element={<Adfar/>}/>
         </Routes>
       </BrowserRouter>
     </div>

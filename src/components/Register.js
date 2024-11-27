@@ -8,11 +8,13 @@ export default function Register() {
   const [password, setPassword] = useState("");
   const [otp, setOtp] = useState(""); // State for OTP input
   const [resendCountdown, setResendCountdown] = useState(30); // Countdown for resend OTP
+  const [isSubmitting, setIsSubmitting] = useState(false); // Track if form is submitting
   const navigate = useNavigate();
 
   // Handle user registration
   const handleRegister = async (e) => {
     e.preventDefault();
+    setIsSubmitting(true); // Disable button to prevent multiple submissions
 
     try {
       const response = await fetch("https://vvbackend.onrender.com/auth/signup", {
@@ -35,6 +37,8 @@ export default function Register() {
     } catch (error) {
       console.error("Error during signup:", error);
       alert("Something went wrong. Please try again later.");
+    } finally {
+      setIsSubmitting(false); // Re-enable the button after request completion
     }
   };
 
@@ -106,15 +110,15 @@ export default function Register() {
       <div className="max-w-md w-full bg-white rounded-lg shadow-lg p-8">
         {step === "register" ? (
           <>
-          <div className="flex flex-col items-center mb-8">
-          <img alt="Logo" src="/logo.png" className="h-12 w-auto mb-4"/>
-            <h2 className="text-3xl font-bold text-gray-800">Sign up to your account</h2>
-            <p className="text-gray-500 mb-6">
-              Already a member?{" "}
-              <a href="/signin" className="text-indigo-600 hover:text-indigo-500 font-medium">
-                Sign In
-              </a>
-            </p>
+            <div className="flex flex-col items-center mb-8">
+              <img alt="Logo" src="/logo.png" className="h-12 w-auto mb-4" />
+              <h2 className="text-3xl font-bold text-gray-800">Sign up to your account</h2>
+              <p className="text-gray-500 mb-6">
+                Already a member?{" "}
+                <a href="/signin" className="text-indigo-600 hover:text-indigo-500 font-medium">
+                  Sign In
+                </a>
+              </p>
             </div>
             <form onSubmit={handleRegister} className="space-y-2">
               <div>
@@ -159,9 +163,10 @@ export default function Register() {
               </div>
               <button
                 type="submit"
+                disabled={isSubmitting} // Disable button when submitting
                 className="w-full mt-6 py-2 bg-green-600 text-white font-semibold rounded-lg hover:bg-indigo-500 focus:outline-none focus:ring-2 focus:ring-indigo-600"
               >
-                Sign Up
+                {isSubmitting ? "Signing Up..." : "Sign Up"}
               </button>
             </form>
           </>

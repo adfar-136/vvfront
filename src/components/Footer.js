@@ -1,16 +1,16 @@
 const navigation = {
     main: [
-      { name: 'About', href: '#' },
-      { name: 'Blog', href: '#' },
-      { name: 'Jobs', href: '#' },
-      { name: 'Press', href: '#' },
-      { name: 'Accessibility', href: '#' },
-      { name: 'Partners', href: '#' },
+      { name: 'Home', href: '/' },
+      { name: 'Student', href: '/student' },
+      { name: 'MERN', href: '/mern' },
+      { name: 'Discussion', href: '/discussion' },
+      { name: 'Who-Am-I', href: '/who-am-i' },
+      { name: 'Contact', href: '/contact' },
     ],
     social: [
       {
         name: 'Facebook',
-        href: '#',
+        href: 'https://www.facebook.com/edupischool/',
         icon: (props) => (
           <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
             <path
@@ -23,7 +23,7 @@ const navigation = {
       },
       {
         name: 'Instagram',
-        href: '#',
+        href: 'https://www.instagram.com/variableverse_with_adfar',
         icon: (props) => (
           <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
             <path
@@ -35,17 +35,21 @@ const navigation = {
         ),
       },
       {
-        name: 'X',
-        href: '#',
+        name: 'LinkedIn',
+        href: 'https://www.linkedin.com/in/adfar-rasheed/', // Add the actual LinkedIn profile URL here
         icon: (props) => (
           <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
-            <path d="M13.6823 10.6218L20.2391 3H18.6854L12.9921 9.61788L8.44486 3H3.2002L10.0765 13.0074L3.2002 21H4.75404L10.7663 14.0113L15.5685 21H20.8131L13.6819 10.6218H13.6823ZM11.5541 13.0956L10.8574 12.0991L5.31391 4.16971H7.70053L12.1742 10.5689L12.8709 11.5655L18.6861 19.8835H16.2995L11.5541 13.096V13.0956Z" />
+            <path
+              fillRule="evenodd"
+              d="M19 0H5C2.239 0 0 2.239 0 5v14c0 2.761 2.239 5 5 5h14c2.761 0 5-2.239 5-5V5c0-2.761-2.239-5-5-5zM7 19H5v-8h2v8zm-1-9c-.553 0-1-.447-1-1s.447-1 1-1 1 .447 1 1-.447 1-1 1zm3 9h-2v-8h2v8zm0-9h-2V8h2v2zm3 9h-2v-4c0-1.104-.896-2-2-2s-2 .896-2 2v4h-2v-8h2v1.5h.04C14.152 7.88 15 6.276 15 4.5 15 2.015 12.985 0 10.5 0S6 2.015 6 4.5c0 1.776.848 3.38 2.04 4.25H8V5h2v2h2v8h-2z"
+              clipRule="evenodd"
+            />
           </svg>
         ),
-      },
+      },      
       {
         name: 'GitHub',
-        href: '#',
+        href: '/https://github.com/adfar-136',
         icon: (props) => (
           <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
             <path
@@ -58,7 +62,7 @@ const navigation = {
       },
       {
         name: 'YouTube',
-        href: '#',
+        href: 'https://www.youtube.com/@variableverse',
         icon: (props) => (
           <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
             <path

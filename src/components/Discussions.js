@@ -30,6 +30,7 @@ const Discussions = () => {
   };
 
   const handleNewDiscussion = async () => {
+    
     try {
       const response = await fetch("https://vvbackend.onrender.com/discussions", {
         method: "POST",
@@ -81,7 +82,7 @@ const Discussions = () => {
 
   const handleCommentSubmit = async (discussionId) => {
     const content = commentInputs[discussionId];
-    console.log(content)
+ 
     if (!content) return;
 
     try {
@@ -113,7 +114,7 @@ const Discussions = () => {
   };
 
   const handleDeleteComment = async (discussionId, commentId) => {
-    console.log(discussionId,  commentId)
+ 
     if (window.confirm("Are you sure you want to delete this comment?")) {
       try {
         const response = await fetch(`https://vvbackend.onrender.com/discussions/${discussionId}/comment/${commentId}`, {

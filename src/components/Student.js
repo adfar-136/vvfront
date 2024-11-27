@@ -62,14 +62,15 @@ const Student = () => {
         credentials: "include",
         body: JSON.stringify({ classId }),
       });
-
-      if (response.ok) {
-        window.open(joinLink, "_blank");
-      } else {
-        console.error("Failed to mark attendance");
+  
+      if (!response.ok) {
+        console.warn("Failed to mark attendance, but the link will still open.");
       }
     } catch (error) {
-      console.error("Error:", error);
+      console.error("Error marking attendance:", error);
+    } finally {
+      // Ensure the link opens in a new tab regardless of the backend response
+      window.open(joinLink, "_blank");
     }
   };
 

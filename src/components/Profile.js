@@ -8,7 +8,7 @@ const Profile = () => {
   const [updatedUserDetails, setUpdatedUserDetails] = useState({});
   
   const [batches, setBatches] = useState([]); // State to store batches
- console.log("object" , isAuthenticated)
+
   useEffect(() => {
     if (isAuthenticated) {
       const fetchUserDetails = async () => {

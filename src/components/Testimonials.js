@@ -2,7 +2,7 @@ const featuredTestimonial = {
     body: 'Since college time i wanted to be a developer but did not know what to do and how to do so learnt several languages but nothing worked. But after joining this course i have a clear vision after orientation and also i am getting strong foundation as well, which i never get on youtube or google. Thanks to sir who is doing all this free of cost but sadly students are not understanding what they are missing by not being serious for this.',
     author: {
       name: 'Anurag Rajput ',
-      handle: 'Anurag Rajput',
+      handle: 'AnuragRajput',
       imageUrl:'testimonials/AnuragRajput.jpg',
       // logoUrl: '/Users/adfarrashid/Downloads/Tahir Khan.JPG', // Use your logo here if applicable
     },
@@ -71,30 +71,30 @@ const featuredTestimonial = {
       ],
       [
         {
-          body: 'The dedication of the mentors is inspiring. They helped me push through the toughest challenges and guided me every step of the way. Thanks to them, I’m on my way to landing my first tech job!',
+          body: 'I have been a subscriber of the Variableverse channel since the very beginning, and I want to share that this channel truly adds tons of value for people wanting to learn web development. Even if you already know a topic, watching the same topic on this channel will definitely teach you something new. The way concepts are explained makes it so much easier to understand and apply. It’s been a huge help in my learning journey!',
           author: {
-            name: 'Vishal Patel',
-            handle: 'vishalpatel',
+            name: 'Surjoyday Talukdar',
+            handle: 'surjoyday_kt100',
             imageUrl:
-              'https://images.unsplash.com/photo-1519345182560-3f2917c472ef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+              'testimonials/surjoydoy.jpg',
           },
         },
         {
-            body: 'I struggled to find affordable tech education, but VariableVerse made it possible. They focus on providing real value without charging a penny. It’s amazing!',
+            body: 'Variableverse has been a game-changer in helping me learn the basics of web development. The course is structured in a simple and beginner-friendly way, making complex topics like HTML, CSS, and JavaScript easy to understand.',
             author: {
-              name: 'Sara Singh',
-              handle: 'sarasignh',
+              name: 'Suryansh Pathania',
+              handle: 'suryanshpathania',
               imageUrl:
-                'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+                'testimonials/suryansh.jpeg',
             },
           },
           {
-            body: 'I struggled to find affordable tech education, but VariableVerse made it possible. They focus on providing real value without charging a penny. It’s amazing!',
+            body: "I am having a fantastic experience learning from Variableverse! The course provided in-depth explanations of complex topics, and I appreciated the emphasis on understanding the 'why' behind each concept. The practical knowledge and real-world examples shared were invaluable. I feel grateful to have gained a deeper understanding of the subject matter, and I highly recommend Variableverse to everyone.",
             author: {
-              name: 'Sara Singh',
-              handle: 'sarasignh',
+              name: 'Pradnya Raosaheb Sonawane',
+              handle: 'ps_pradnya',
               imageUrl:
-                'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+                'testimonials/Sonawane.jpg',
             },
           },
         // More testimonials...
@@ -138,7 +138,7 @@ const featuredTestimonial = {
           <div className="mx-auto max-w-2xl text-center">
             <h2 className="text-base/7 font-semibold text-indigo-600">Testimonials</h2>
             <p className="mt-2 text-balance text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
-              We have worked with thousands of amazing people
+            We’ve had the privilege of mentoring thousands of incredible students.
             </p>
           </div>
           <div className="mx-auto mt-16 grid max-w-2xl grid-cols-1 grid-rows-1 gap-8 text-sm/6 text-gray-900 sm:mt-20 sm:grid-cols-2 xl:mx-0 xl:max-w-none xl:grid-flow-col xl:grid-cols-4">

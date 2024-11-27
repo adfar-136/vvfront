@@ -1,15 +1,8 @@
-'use client'
 
 import { useState } from 'react'
-import { Dialog, DialogPanel } from '@headlessui/react'
-import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 
-const navigation = [
-    { name: 'MERN', href: '/mern' },
-    { name: 'About Us', href: '/about' },
-    { name: 'Documentation', href: '/docs' },
-    { name: 'Contact', href: '/contact' },
-]
+
+
 
 export default function Herosection() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
@@ -48,7 +41,7 @@ export default function Herosection() {
                   </p>
                   <div className="mt-10 flex items-center gap-x-6">
                     <a
-                      href="#"
+                      href="/contact"
                       className="rounded-md bg-green-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                     >
                       Get started
@@ -67,7 +60,7 @@ export default function Herosection() {
                     <div className="relative">
                       <img
                         alt=""
-                        src="/mern.webp"
+                        src="/images/mern.webp"
                         className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
                       />
                       <div className="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10" />
@@ -77,7 +70,7 @@ export default function Herosection() {
                     <div className="relative">
                       <img
                         alt=""
-                        src="/teach.webp"
+                        src="/images/teach.webp"
                         className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
                       />
                       <div className="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10" />

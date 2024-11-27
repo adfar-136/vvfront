@@ -1,70 +1,63 @@
-# Getting Started with Create React App
+# **VariableVerse Website**
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+VariableVerse is a full-stack MERN application designed to provide free educational resources and tools to students preparing for interviews. The platform offers free live classes, project-based learning, personalized mentorship, placement assistance, and access to a vibrant student community.
 
-## Available Scripts
+This repository includes the front-end, back-end, and integrated features of the VariableVerse platform.
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## **Features**
 
-Runs the app in the development mode.\
-Open [https://vvbackend.onrender.com](https://vvbackend.onrender.com) to view it in your browser.
+### **General Features**
+- **Responsive Design**: Built with Tailwind CSS, ensuring a seamless experience across devices.
+- **Single Page Application (SPA)**: Dynamic navigation without reloading the page using React Router.
+- **Interactive Animations**: Smooth transitions and hover effects for an engaging UI experience.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### **Front-End Features**
+- **Hero Section**: A visually appealing introduction to the platform with dynamic SVG animations.
+- **Portfolio Page**: Highlights projects, content creation work, services offered, and a contact section.
+- **Signup/Login Forms**: Interactive forms with state management for real-time user input validation.
+- **Navbar**: Gradient-styled navigation bar with hover effects, user authentication states, and dropdown menus.
+- **Student Component**: Displays upcoming classes, tracks attendance, and provides student-focused features.
 
-### `npm test`
+### **Back-End Features**
+- **Authentication**: Secure login and signup functionality using JWT for authentication.
+- **Attendance Schema**: Tracks student attendance records with fields for class name, class ID, and attendance status.
+- **Interview Question Editor**: Enables students to answer and test coding questions in real time.
+- **Mock Interviews**: Peer-to-peer interview preparation with tools for evaluation.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### **Educational Features**
+- **Live Classes**: Access to free live sessions on MERN, Data Science, and more.
+- **Curriculum**: Comprehensive course materials covering MERN, JavaScript, React, Node.js, and more.
+- **JavaScript Interview Questions**: Over 25 JavaScript array methods, function types, and object properties with examples.
+- **React Concepts**: Covers React props, state, lifecycle methods, and advanced properties.
+- **Tailwind CSS Integration**: Clean, responsive UI built with modern CSS utilities.
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## **Tech Stack**
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### **Front-End**
+- **React.js**: Framework for building interactive user interfaces.
+- **Tailwind CSS**: Utility-first framework for responsive and modern styling.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### **Back-End**
+- **Node.js**: Backend runtime for handling server-side operations.
+- **Express.js**: Lightweight server framework.
+- **MongoDB**: NoSQL database for storing user data, attendance, and interview questions.
 
-### `npm run eject`
+### **Deployment**
+-onRender For deploying the front-end and back-end .
+-
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## **Installation**
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Prerequisites
+Ensure you have the following installed:
+- Node.js (v16+)
+- MongoDB
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
