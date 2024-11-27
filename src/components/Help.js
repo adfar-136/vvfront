@@ -29,7 +29,7 @@ export default function Page() {
               <div className="w-0 flex-auto lg:ml-auto lg:w-auto lg:flex-none lg:self-end">
                 <img
                   alt=""
-                  src="/images/IMG_3993.jpg"
+                  src="/images/IMG_5773.JPG"
                   className="aspect-[7/5] w-[37rem] max-w-none rounded-2xl bg-gray-50 object-cover"
                 />
               </div>
@@ -37,21 +37,21 @@ export default function Page() {
                 <div className="order-first flex w-64 flex-none justify-end self-end lg:w-auto">
                   <img
                     alt=""
-                    src="/images/IMG_3991.jpg"
+                    src="/images/GKQS4280.JPG"
                     className="aspect-[4/3] w-[24rem] max-w-none flex-none rounded-2xl bg-gray-50 object-cover"
                   />
                 </div>
                 <div className="flex w-96 flex-auto justify-end lg:w-auto lg:flex-none">
                   <img
                     alt=""
-                    src="/images/GKQS4280.JPG"
+                    src="/images/IMG_3995.JPG"
                     className="aspect-[7/5] w-[37rem] max-w-none flex-none rounded-2xl bg-gray-50 object-cover"
                   />
                 </div>
                 <div className="hidden sm:block sm:w-0 sm:flex-auto lg:w-auto lg:flex-none">
                   <img
                     alt=""
-                    src="/images/IMG_5773.JPG"
+                    src="/images/GSHZ5696.JPG"
                     className="aspect-[4/3] w-[24rem] max-w-none rounded-2xl bg-gray-50 object-cover"
                   />
                 </div>

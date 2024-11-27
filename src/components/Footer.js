@@ -49,7 +49,7 @@ const navigation = {
       },      
       {
         name: 'GitHub',
-        href: '/https://github.com/adfar-136',
+        href: 'https://github.com/adfar-136',
         icon: (props) => (
           <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
             <path
@@ -82,14 +82,14 @@ const navigation = {
         <div className="mx-auto max-w-7xl overflow-hidden px-6 py-20 sm:py-24 lg:px-8">
           <nav aria-label="Footer" className="-mb-6 flex flex-wrap justify-center gap-x-12 gap-y-3 text-sm/6">
             {navigation.main.map((item) => (
-              <a key={item.name} href={item.href} className="text-gray-400 hover:text-white">
+              <a key={item.name} href={item.href} target="_blank" className="text-gray-400 hover:text-white">
                 {item.name}
               </a>
             ))}
           </nav>
           <div className="mt-16 flex justify-center gap-x-10">
             {navigation.social.map((item) => (
-              <a key={item.name} href={item.href} className="text-gray-400 hover:text-gray-300">
+              <a key={item.name} href={item.href} target="_blank" className="text-gray-400 hover:text-gray-300">
                 <span className="sr-only">{item.name}</span>
                 <item.icon aria-hidden="true" className="size-6" />
               </a>

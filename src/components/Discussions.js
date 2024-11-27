@@ -199,7 +199,7 @@ const Discussions = () => {
     <div className="max-w-5xl mx-auto p-4">
 
     {/* Top Responsive Section */}
-<div className="bg-gradient-to-r from-indigo-600 to-indigo-900  text-white p-8 rounded-lg shadow-lg mb-6">
+<div className="bg-gradient-to-r from-green-600 to-green-900  text-white p-8 rounded-lg shadow-lg mb-6">
   <h1 className="text-4xl md:text-5xl font-extrabold text-center mb-6">
     Welcome to Your Dashboard
   </h1>
@@ -248,7 +248,7 @@ const Discussions = () => {
       ></textarea>
       <button
         onClick={handleNewDiscussion}
-        className="mt-2 px-6 py-2 bg-blue-500 text-white rounded-lg shadow hover:bg-blue-600"
+        className="mt-2 px-6 py-2 bg-green-600 text-white rounded-lg shadow hover:bg-blue-600"
       >
         Post
       </button>

@@ -4,35 +4,35 @@ const Services = () => {
   const services = [
     {
       title: "Business Websites",
-      price: "$500+",
+      price: "₹15000+",
       image: "/services/brandd.jpg",
       description: "Responsive, SEO-optimized business websites designed to boost your brand's visibility and help convert visitors into customers.",
       benefit: "Increase brand visibility and reach more potential customers."
     },
     {
       title: "Custom Web Applications",
-      price: "$1000+",
+      price: "₹10000+",
       image: "/services/custom.jpg",
       description: "Tailored web applications that improve business efficiency, enhance user experience, and streamline your processes.",
       benefit: "Improve business efficiency with tailored features and functionality."
     },
     {
       title: "Portfolio Websites",
-      price: "$200+",
+      price: "₹5000+",
       image: "/services/portfolio.jpg",
       description: "Professional portfolio websites to showcase your work, attract clients, and stand out in your industry.",
       benefit: "Attract more clients and stand out in your industry with a stunning portfolio."
     },
     {
       title: "Tour and Travel Websites",
-      price: "$800+",
+      price: "₹12000+",
       image: "/services/tour.jpg",
       description: "User-friendly travel and tour websites that increase bookings by providing a seamless booking experience.",
       benefit: "Boost your travel agency's bookings and visibility."
     },
     {
       title: "E-commerce Websites",
-      price: "$1000+",
+      price: "₹20000+",
       image: "/services/shop.jpg",
       description: "Custom-built e-commerce websites with integrated payment gateways and inventory management for a seamless shopping experience.",
       benefit: "Grow your business with an online store that drives sales."

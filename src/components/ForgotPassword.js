@@ -48,7 +48,7 @@ export default function ForgotPassword() {
       const data = await response.json();
       if (data.status) {
         setMessage("Your password has been reset successfully.");
-        navigate("/login"); // Redirect to login page after reset
+        navigate("/signin"); 
       } else {
         setError(data.message || "Error resetting password");
       }

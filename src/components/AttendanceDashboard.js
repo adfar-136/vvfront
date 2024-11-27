@@ -49,12 +49,20 @@ const AttendanceDashboard = () => {
     return <div className="text-center p-4">Loading...</div>;
   }
 
-  if (error) {
-    return <div className="text-center text-red-500">{error}</div>;
-  }
-
   // Filter sessions to only include those up until today
   const filteredSessions = filterSessionsUpToToday(sessions);
+
+  // If no attendance records and no sessions, display error message
+  if (!attendanceRecords.length && filteredSessions.length === 0) {
+    return (
+      <div className="container mx-auto p-6">
+        <div className="bg-red-100 border border-red-500 text-red-700 p-6 rounded-md">
+          <p className="text-lg font-semibold">No Attendance Records Found!</p>
+          <p>Please check back later or contact support if this issue persists.</p>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div className="container mx-auto p-6">
